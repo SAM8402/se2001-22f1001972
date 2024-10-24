@@ -61,8 +61,17 @@ Ab bichhadne ke baad tumse laga ki tumse milna zindagi ka ek sabse khubsurat pal
 <p class="p1">Happy Birthday Cutie ❤️🤗</p>
 <p class="p1">Drag the papers to move!</p>
 </div>
-  <script  src="./script.js"></script>
-  <script  src="./mobile.js"></script>
+<script>
+  if (/Mobi|Android|iPhone|iPad/i.test(navigator.userAgent)) {
+    let script = document.createElement('script');
+    script.src = './mobile.js';  
+    document.body.appendChild(script);
+  } else {
+    let script = document.createElement('script');
+    script.src = './script.js';  
+    document.body.appendChild(script);
+  }
+</script>
 
 </body>
 </html>
