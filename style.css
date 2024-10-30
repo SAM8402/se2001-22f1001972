@@ -71,3 +71,30 @@ p {
   
   // filter: drop-shadow(2px 1.5px 1px rgba(0,0,105,0.9));
 }
+.birthday-cake {
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Button styling */
+.birthday-button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: rgb(255, 105, 180);
+  color: white;
+  font-size: 18px;
+  font-family: 'Zeyada';
+  text-decoration: none;
+  border-radius: 10px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  margin-top: 20px;
+}
+
+/* Button hover effect */
+.birthday-button:hover {
+  background-color: rgb(255, 182, 193);
+  box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.3);
+  transform: scale(1.05);
+}
